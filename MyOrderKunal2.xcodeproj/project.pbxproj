@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		67E543B92CB97AD6006A2B75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67E5439B2CB97AD4006A2B75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67E543A22CB97AD4006A2B75;
+			remoteInfo = MyOrderKunal2;
+		};
+		67E543C32CB97AD6006A2B75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67E5439B2CB97AD4006A2B75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67E543A22CB97AD4006A2B75;
+			remoteInfo = MyOrderKunal2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67E543A32CB97AD4006A2B75 /* MyOrderKunal2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyOrderKunal2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E543B82CB97AD6006A2B75 /* MyOrderKunal2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyOrderKunal2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E543C22CB97AD6006A2B75 /* MyOrderKunal2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyOrderKunal2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		67E543A52CB97AD4006A2B75 /* MyOrderKunal2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyOrderKunal2;
+			sourceTree = "<group>";
+		};
+		67E543BB2CB97AD6006A2B75 /* MyOrderKunal2Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyOrderKunal2Tests;
+			sourceTree = "<group>";
+		};
+		67E543C52CB97AD6006A2B75 /* MyOrderKunal2UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyOrderKunal2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67E543A02CB97AD4006A2B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E543B52CB97AD6006A2B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E543BF2CB97AD6006A2B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67E5439A2CB97AD4006A2B75 = {
+			isa = PBXGroup;
+			children = (
+				67E543A52CB97AD4006A2B75 /* MyOrderKunal2 */,
+				67E543BB2CB97AD6006A2B75 /* MyOrderKunal2Tests */,
+				67E543C52CB97AD6006A2B75 /* MyOrderKunal2UITests */,
+				67E543A42CB97AD4006A2B75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67E543A42CB97AD4006A2B75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67E543A32CB97AD4006A2B75 /* MyOrderKunal2.app */,
+				67E543B82CB97AD6006A2B75 /* MyOrderKunal2Tests.xctest */,
+				67E543C22CB97AD6006A2B75 /* MyOrderKunal2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67E543A22CB97AD4006A2B75 /* MyOrderKunal2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67E543CC2CB97AD6006A2B75 /* Build configuration list for PBXNativeTarget "MyOrderKunal2" */;
+			buildPhases = (
+				67E5439F2CB97AD4006A2B75 /* Sources */,
+				67E543A02CB97AD4006A2B75 /* Frameworks */,
+				67E543A12CB97AD4006A2B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				67E543A52CB97AD4006A2B75 /* MyOrderKunal2 */,
+			);
+			name = MyOrderKunal2;
+			packageProductDependencies = (
+			);
+			productName = MyOrderKunal2;
+			productReference = 67E543A32CB97AD4006A2B75 /* MyOrderKunal2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67E543B72CB97AD6006A2B75 /* MyOrderKunal2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67E543CF2CB97AD6006A2B75 /* Build configuration list for PBXNativeTarget "MyOrderKunal2Tests" */;
+			buildPhases = (
+				67E543B42CB97AD6006A2B75 /* Sources */,
+				67E543B52CB97AD6006A2B75 /* Frameworks */,
+				67E543B62CB97AD6006A2B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67E543BA2CB97AD6006A2B75 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				67E543BB2CB97AD6006A2B75 /* MyOrderKunal2Tests */,
+			);
+			name = MyOrderKunal2Tests;
+			packageProductDependencies = (
+			);
+			productName = MyOrderKunal2Tests;
+			productReference = 67E543B82CB97AD6006A2B75 /* MyOrderKunal2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67E543C12CB97AD6006A2B75 /* MyOrderKunal2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67E543D22CB97AD6006A2B75 /* Build configuration list for PBXNativeTarget "MyOrderKunal2UITests" */;
+			buildPhases = (
+				67E543BE2CB97AD6006A2B75 /* Sources */,
+				67E543BF2CB97AD6006A2B75 /* Frameworks */,
+				67E543C02CB97AD6006A2B75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67E543C42CB97AD6006A2B75 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				67E543C52CB97AD6006A2B75 /* MyOrderKunal2UITests */,
+			);
+			name = MyOrderKunal2UITests;
+			packageProductDependencies = (
+			);
+			productName = MyOrderKunal2UITests;
+			productReference = 67E543C22CB97AD6006A2B75 /* MyOrderKunal2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67E5439B2CB97AD4006A2B75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					67E543A22CB97AD4006A2B75 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					67E543B72CB97AD6006A2B75 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 67E543A22CB97AD4006A2B75;
+					};
+					67E543C12CB97AD6006A2B75 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 67E543A22CB97AD4006A2B75;
+					};
+				};
+			};
+			buildConfigurationList = 67E5439E2CB97AD4006A2B75 /* Build configuration list for PBXProject "MyOrderKunal2" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67E5439A2CB97AD4006A2B75;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 67E543A42CB97AD4006A2B75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67E543A22CB97AD4006A2B75 /* MyOrderKunal2 */,
+				67E543B72CB97AD6006A2B75 /* MyOrderKunal2Tests */,
+				67E543C12CB97AD6006A2B75 /* MyOrderKunal2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67E543A12CB97AD4006A2B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E543B62CB97AD6006A2B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E543C02CB97AD6006A2B75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67E5439F2CB97AD4006A2B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E543B42CB97AD6006A2B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67E543BE2CB97AD6006A2B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67E543BA2CB97AD6006A2B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67E543A22CB97AD4006A2B75 /* MyOrderKunal2 */;
+			targetProxy = 67E543B92CB97AD6006A2B75 /* PBXContainerItemProxy */;
+		};
+		67E543C42CB97AD6006A2B75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67E543A22CB97AD4006A2B75 /* MyOrderKunal2 */;
+			targetProxy = 67E543C32CB97AD6006A2B75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67E543CA2CB97AD6006A2B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67E543CB2CB97AD6006A2B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67E543CD2CB97AD6006A2B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyOrderKunal2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.MyOrderKunal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67E543CE2CB97AD6006A2B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyOrderKunal2/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.MyOrderKunal2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67E543D02CB97AD6006A2B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.MyOrderKunal2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyOrderKunal2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyOrderKunal2";
+			};
+			name = Debug;
+		};
+		67E543D12CB97AD6006A2B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.MyOrderKunal2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyOrderKunal2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyOrderKunal2";
+			};
+			name = Release;
+		};
+		67E543D32CB97AD6006A2B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.MyOrderKunal2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyOrderKunal2;
+			};
+			name = Debug;
+		};
+		67E543D42CB97AD6006A2B75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sheridan.MyOrderKunal2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyOrderKunal2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67E5439E2CB97AD4006A2B75 /* Build configuration list for PBXProject "MyOrderKunal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E543CA2CB97AD6006A2B75 /* Debug */,
+				67E543CB2CB97AD6006A2B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67E543CC2CB97AD6006A2B75 /* Build configuration list for PBXNativeTarget "MyOrderKunal2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E543CD2CB97AD6006A2B75 /* Debug */,
+				67E543CE2CB97AD6006A2B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67E543CF2CB97AD6006A2B75 /* Build configuration list for PBXNativeTarget "MyOrderKunal2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E543D02CB97AD6006A2B75 /* Debug */,
+				67E543D12CB97AD6006A2B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67E543D22CB97AD6006A2B75 /* Build configuration list for PBXNativeTarget "MyOrderKunal2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67E543D32CB97AD6006A2B75 /* Debug */,
+				67E543D42CB97AD6006A2B75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67E5439B2CB97AD4006A2B75 /* Project object */;
+}
