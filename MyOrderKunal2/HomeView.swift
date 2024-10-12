@@ -28,7 +28,7 @@ struct HomeView: View {
     //list of crusts
     var crusts = ["Thin", "Regular", "Thick", "Stuffed"]
     @State private var selectedCrust = "Regular"
-
+    
     @State private var numPizzas: Int = 1
     
     @State private var date: Date = Date.now
@@ -49,10 +49,10 @@ struct HomeView: View {
         }catch {
             print("Error saving order")}
     }
-        
-        
+    
+    
     var body: some View {
-        NavigationStack{
+        TabView{
             VStack(alignment: .leading, spacing: 20) {
                 
                 // Title Section of the Home Page
@@ -71,7 +71,7 @@ struct HomeView: View {
                     }
                 }
                 .pickerStyle(.segmented)
-
+                
                 // Topping Picker
                 Text("Select Topping")
                     .font(.headline)
@@ -81,7 +81,7 @@ struct HomeView: View {
                     }
                 }
                 .pickerStyle(.segmented)
-
+                
                 // Crust Picker
                 Text("Select Crust")
                     .font(.headline)
@@ -91,41 +91,27 @@ struct HomeView: View {
                     }
                 }
                 .pickerStyle(.segmented)
-
+                
                 // Quantity Stepper 1-3 only...
                 Text("Select Quantity")
                     .font(.headline)
                 Stepper("Number of Pizzas: \(numPizzas)", value: $numPizzas, in: 1...3)
                 
                 DatePicker(selection: $date, in: Date.now..., displayedComponents: .date) {
-                        Text("Select date for the order")
+                    Text("Select date for the order")
                 }
                 
                 // Add Order Button, to add order in orders list
                 Button("Add order"){
                     addOrder()
                 }
-//                {
-//                    Text("Add Order")
-//                        .font(.headline)
-//                        .padding()
-//                        .frame(maxWidth: .infinity)
-//                        .foregroundColor(.white)
-//                        .background(Color.green)
-//                        .cornerRadius(10)
-//                }
-                
-                // Navigation Link to navigate to ShowOrdersView
-//                NavigationLink(destination: ShowOrdersView(orders: orders)) {
-//                    Text("Show Orders")
-//                        .font(.headline)
-//                        .padding()
-//                        .frame(maxWidth: .infinity)
-//                        .foregroundColor(.white)
-//                        .background(Color.teal)
-//                        .cornerRadius(10)
-//                }
-                // spacer for making app reable
+                    .font(.headline)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+                    .background(Color.green)
+                    .cornerRadius(10)
+
                 Spacer()
             }
             .padding()
