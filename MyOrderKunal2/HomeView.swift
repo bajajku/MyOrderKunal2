@@ -17,9 +17,6 @@ struct HomeView: View {
     private var orders: FetchedResults<Order>
     
     
-    // list of orders
-//    @State private var orders: [Order] = []
-    
     // list of sizes
     var sizes = ["Small", "Medium", "Large"]
     @State private var selectedSize = "Medium"
@@ -34,13 +31,16 @@ struct HomeView: View {
 
     @State private var numPizzas: Int = 1
     
+    @State private var date: Date = Date.now
+    
+    
     func addOrder(){
         let newOrder = Order(context: viewContext)
         newOrder.size = selectedSize
         newOrder.topping = selectedTopping
         newOrder.pizza_type = selectedCrust
         newOrder.quantity = Int16(numPizzas)
-        newOrder.date = Date()
+        newOrder.date = date
         
         do {
             try viewContext.save()
@@ -96,6 +96,10 @@ struct HomeView: View {
                 Text("Select Quantity")
                     .font(.headline)
                 Stepper("Number of Pizzas: \(numPizzas)", value: $numPizzas, in: 1...3)
+                
+                DatePicker(selection: $date, in: Date.now..., displayedComponents: .date) {
+                        Text("Select date for the order")
+                }
                 
                 // Add Order Button, to add order in orders list
                 Button("Add order"){
