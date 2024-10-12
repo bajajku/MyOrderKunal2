@@ -34,6 +34,22 @@ struct HomeView: View {
 
     @State private var numPizzas: Int = 1
     
+    func addOrder(){
+        let newOrder = Order(context: viewContext)
+        newOrder.size = selectedSize
+        newOrder.topping = selectedTopping
+        newOrder.pizza_type = selectedCrust
+        newOrder.quantity = Int16(numPizzas)
+        newOrder.date = Date()
+        
+        do {
+            try viewContext.save()
+            
+            print("Order saved successfully")
+        }catch {
+            print("Error saving order")}
+    }
+        
         
     var body: some View {
         NavigationStack{
@@ -82,18 +98,18 @@ struct HomeView: View {
                 Stepper("Number of Pizzas: \(numPizzas)", value: $numPizzas, in: 1...3)
                 
                 // Add Order Button, to add order in orders list
-                Button(action: {
-//                    let order = Order(size: selectedSize, topping: selectedTopping, crust: selectedCrust, count: numPizzas)
-//                    addOrder(order: order)
-                }) {
-                    Text("Add Order")
-                        .font(.headline)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
-                        .background(Color.green)
-                        .cornerRadius(10)
+                Button("Add order"){
+                    addOrder()
                 }
+//                {
+//                    Text("Add Order")
+//                        .font(.headline)
+//                        .padding()
+//                        .frame(maxWidth: .infinity)
+//                        .foregroundColor(.white)
+//                        .background(Color.green)
+//                        .cornerRadius(10)
+//                }
                 
                 // Navigation Link to navigate to ShowOrdersView
 //                NavigationLink(destination: ShowOrdersView(orders: orders)) {
