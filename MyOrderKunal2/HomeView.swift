@@ -36,9 +36,10 @@ struct HomeView: View {
     
     func addOrder(){
         let newOrder = Order(context: viewContext)
+        newOrder.id = UUID()
         newOrder.size = selectedSize
         newOrder.topping = selectedTopping
-        newOrder.pizza_type = selectedCrust
+        newOrder.pizzaType = selectedCrust
         newOrder.quantity = Int16(numPizzas)
         newOrder.date = date
         
