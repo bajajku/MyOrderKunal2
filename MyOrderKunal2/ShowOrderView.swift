@@ -5,7 +5,7 @@ struct ShowOrderView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Order.date, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Order.date, ascending: false)],
         animation: .default)
     private var orders: FetchedResults<Order>
     
@@ -15,7 +15,7 @@ struct ShowOrderView: View {
         NavigationView {
             List {
                 ForEach(orders) { order in
-                    NavigationLink("Order ID: \(order.id?.uuidString ?? "Unknown")") {
+                    NavigationLink("Order on: \(order.date!, formatter: itemFormatter)") {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Order Details")
                                 .font(.headline)
@@ -30,7 +30,7 @@ struct ShowOrderView: View {
                         }
                         .padding()
                     }
-                }
+                }.onDelete(perform: deleteItems)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -40,7 +40,22 @@ struct ShowOrderView: View {
             Text("Select an item")
         }
     }
+    private func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            offsets.map { orders[$0] }.forEach(viewContext.delete)
+
+            do {
+                try viewContext.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
+    }
 }
+
 
 // Date Formatter for displaying the date properly
 private let itemFormatter: DateFormatter = {

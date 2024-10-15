@@ -54,81 +54,75 @@ struct OrderView: View {
     
     
     var body: some View {
-        TabView{
+        
+        
+        VStack(alignment: .leading, spacing: 20) {
             
-            ContentView()
-                .tabItem{
-                    Text("Home")
-                    Image(systemName: "house")
-                }
+            // Title Section of the Home Page
+            Text("Customize your Pizza")
+                .font(.title2)
+                .fontWeight(.bold)
+                .padding(.bottom, 20)
+                .frame(maxWidth: .infinity, alignment: .leading)
             
-            VStack(alignment: .leading, spacing: 20) {
-                
-                // Title Section of the Home Page
-                Text("Customize your Pizza")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .padding(.bottom, 20)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-                // Pizza Size Picker
-                Text("Select Pizza Size")
-                    .font(.headline)
-                Picker("Please choose the size of Pizza", selection: $selectedSize) {
-                    ForEach(sizes, id: \.self) {
-                        Text($0)
-                    }
+            // Pizza Size Picker
+            Text("Select Pizza Size")
+                .font(.headline)
+            Picker("Please choose the size of Pizza", selection: $selectedSize) {
+                ForEach(sizes, id: \.self) {
+                    Text($0)
                 }
-                .pickerStyle(.segmented)
-                
-                // Topping Picker
-                Text("Select Topping")
-                    .font(.headline)
-                Picker("Please choose the topping for the Pizza", selection: $selectedTopping) {
-                    ForEach(toppings, id: \.self) {
-                        Text($0)
-                    }
-                }
-                .pickerStyle(.segmented)
-                
-                // Crust Picker
-                Text("Select Crust")
-                    .font(.headline)
-                Picker("Please choose the crust", selection: $selectedCrust) {
-                    ForEach(crusts, id: \.self) {
-                        Text($0)
-                    }
-                }
-                .pickerStyle(.segmented)
-                
-                // Quantity Stepper 1-3 only...
-                Text("Select Quantity")
-                    .font(.headline)
-                Stepper("Number of Pizzas: \(numPizzas)", value: $numPizzas, in: 1...3)
-                
-                DatePicker(selection: $date, in: Date.now..., displayedComponents: .date) {
-                    Text("Select date for the order")
-                }
-                
-                // Add Order Button, to add order in orders list
-                Button("Add order"){
-                    addOrder()
-                }
-                    .font(.headline)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.white)
-                    .background(Color.green)
-                    .cornerRadius(10)
-
-                Spacer()
             }
-            .padding()
-            .navigationTitle("My Pizza Order")
+            .pickerStyle(.segmented)
             
+            // Topping Picker
+            Text("Select Topping")
+                .font(.headline)
+            Picker("Please choose the topping for the Pizza", selection: $selectedTopping) {
+                ForEach(toppings, id: \.self) {
+                    Text($0)
+                }
+            }
+            .pickerStyle(.segmented)
+            
+            // Crust Picker
+            Text("Select Crust")
+                .font(.headline)
+            Picker("Please choose the crust", selection: $selectedCrust) {
+                ForEach(crusts, id: \.self) {
+                    Text($0)
+                }
+            }
+            .pickerStyle(.segmented)
+            
+            // Quantity Stepper 1-3 only...
+            Text("Select Quantity")
+                .font(.headline)
+            Stepper("Number of Pizzas: \(numPizzas)", value: $numPizzas, in: 1...3)
+            
+            DatePicker(selection: $date, in: Date.now..., displayedComponents: .date) {
+                Text("Select date for the order")
+            }
+            
+            // Add Order Button, to add order in orders list
+            Button("Add order"){
+                addOrder()
+            }
+            .font(.headline)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .foregroundColor(.white)
+            .background(Color.green)
+            .cornerRadius(10)
+            
+            Spacer()
         }
+        .padding()
+        .navigationTitle("My Pizza Order")
+        
     }
 }
+
 
 #Preview {
     OrderView()
