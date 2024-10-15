@@ -105,16 +105,17 @@ struct OrderView: View {
             }
             
             // Add Order Button, to add order in orders list
-            Button("Add order"){
+            Button(action: {
                 addOrder()
+            }) {
+                Text("Add Order")
+                    .font(.headline)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+                    .background(Color.green)
+                    .cornerRadius(10)
             }
-            .font(.headline)
-            .padding()
-            .frame(maxWidth: .infinity)
-            .foregroundColor(.white)
-            .background(Color.green)
-            .cornerRadius(10)
-            
             Spacer()
         }
         .padding()
