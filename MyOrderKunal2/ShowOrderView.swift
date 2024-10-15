@@ -1,7 +1,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct ShowOrderView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(
@@ -51,5 +51,5 @@ private let itemFormatter: DateFormatter = {
 }()
 
 #Preview {
-    ContentView()
+    ShowOrderView()
 }
