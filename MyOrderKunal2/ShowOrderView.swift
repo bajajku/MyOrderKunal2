@@ -19,10 +19,10 @@ struct ShowOrderView: View {
         NavigationView {
             List {
                 ForEach(orders) { order in
-                    NavigationLink("Order on: \(order.date!, formatter: itemFormatter)") {
-                        VStack(alignment: .leading, spacing: 10) {
+                    NavigationLink(destination: {
+                        VStack(alignment: .center, spacing: 12) {
                             Text("Order Details")
-                                .font(.headline)
+                                .font(.title)
                             Spacer()
                             
                             Text("Pizza Type: \(order.pizzaType ?? "Unknown")")
@@ -30,15 +30,27 @@ struct ShowOrderView: View {
                             Text("Quantity: \(order.quantity)")
                             Text("Toppings: \(order.topping ?? "None")")
                             Text("Date: \(order.date!, formatter: itemFormatter)")
-                            Spacer()
                             
+                            Spacer()
                             Stepper("Edit Order Quantity: \(selectedQuantity)", value: $selectedQuantity, in: 1...6)
                             
-                            Button("Update Quantity"){
+                            Button(action: {
                                 updateOrderQuantity(order: order)
+                            }) {
+                                Text("Update Quantity")
+                                    .padding()
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(8)
                             }
+                            Spacer()
                         }
                         .padding()
+                    }) {
+                        Text("Order on: \(order.date!, formatter: itemFormatter)")
+                            .font(.headline)
+                            .foregroundColor(.blue)
                     }.alert(isPresented: $showAlert) {
                         Alert(title: Text("Alert!!!"), message: Text("Order quantity has been updated"), dismissButton: .default(Text("OK")))
                     }
