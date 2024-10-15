@@ -9,6 +9,10 @@ struct ShowOrderView: View {
         animation: .default)
     private var orders: FetchedResults<Order>
     
+    @State private var selectedQuantity: Int = 1
+    @State private var showAlert: Bool = false
+    
+    
     
     var body: some View {
         
@@ -27,10 +31,18 @@ struct ShowOrderView: View {
                             Text("Toppings: \(order.topping ?? "None")")
                             Text("Date: \(order.date!, formatter: itemFormatter)")
                             Spacer()
+                            
+                            Stepper("Edit Order Quantity: \(selectedQuantity)", value: $selectedQuantity, in: 1...6)
+                            
+                            Button("Update Quantity"){
+                                updateOrderQuantity(order: order)
+                            }
                         }
                         .padding()
+                    }.alert(isPresented: $showAlert) {
+                        Alert(title: Text("Alert!!!"), message: Text("Order quantity has been updated"), dismissButton: .default(Text("OK")))
                     }
-                }.onDelete(perform: deleteItems)
+                }.onDelete(perform: deleteOrders)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -40,18 +52,31 @@ struct ShowOrderView: View {
             Text("Select an item")
         }
     }
-    private func deleteItems(offsets: IndexSet) {
+    private func deleteOrders(offsets: IndexSet) {
         withAnimation {
             offsets.map { orders[$0] }.forEach(viewContext.delete)
 
             do {
                 try viewContext.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
+        }
+    }
+    
+    private func updateOrderQuantity(order: Order) {
+        if(selectedQuantity != order.quantity){
+            
+            order.quantity = (Int16(selectedQuantity))
+            selectedQuantity = 1
+            do {
+                try viewContext.save()
+                showAlert = !showAlert
+                
+                print("Order saved successfully")
+            }catch {
+                print("Error saving order")}
         }
     }
 }
